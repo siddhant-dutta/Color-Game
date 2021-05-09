@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Color Game</h1>
+    </div>
+    <ul>
+        <li><a href="#" onclick="play()" id="play">Play</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Difficulty</a>
+          <div class="dropdown-content">
+            <a href="#">Easy</a>
+            <a href="#">Hard</a>
+          </div>
+        </li>
+    </ul>
+    
+    <div class="row">
+        <div class="question" id="q">
+            <div>
+                ( <span id="R"></span>, <span id="G"></span>, <span id="B"></span> )
+            </div>
+        </div>
+
+        <div class="playarea">
+            <div class="container">
+                <div class="item Easy" id="1" onclick="check(this.id)"></div>
+                <div class="item Easy" id="2" onclick="check(this.id)"></div>
+                <div class="item Easy" id="3" onclick="check(this.id)"></div>
+                <div class="item Hard" id="4" onclick="check(this.id)"></div>
+                <div class="item Hard" id="5" onclick="check(this.id)"></div>
+                <div class="item Hard" id="6" onclick="check(this.id)"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
