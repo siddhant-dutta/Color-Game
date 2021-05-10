@@ -8,9 +8,11 @@ var key=0;
 var id ='';
 function reset() {
     document.getElementById("play").innerText = "Play";
-    for (let index = 1; index < 7; index++) {
-        document.getElementById(index).style.backgroundColor = 'rgb(' + 255 + ',' + 255 + ',' + 255 + ')';
-    }
+    // for (let index = 1; index < 7; index++) {
+    //     document.getElementById(index).style.backgroundColor = 'rgb(' + 255 + ',' + 255 + ',' + 255 + ')';
+    // }
+    document.getElementById("game").style.display = "none";
+
 }
 function check(clicked) {
     id = clicked;
@@ -22,6 +24,7 @@ function check(clicked) {
 
 function play() {
     if (document.getElementById("play").innerText == "Play") {
+        document.getElementById("game").style.display = "flex";
         document.getElementById("play").innerText = "Reset";
 
         var x = Math.floor((Math.random() * 256) );
