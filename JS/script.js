@@ -23,9 +23,11 @@ function check(clicked) {
         document.body.style.backgroundColor=document.getElementById(key).style.backgroundColor;
     }
 }
-
+var count = -1;
 function play() {
-    if (document.getElementById("play").innerText == "Play") {
+    // if (document.getElementById("play").innerText == "Play")
+    count++;
+    if (count == 0) {
         document.getElementById("game").style.display = "flex";
         document.getElementById("initext").style.display = "none";
         document.getElementById("play").innerText = "Reset";
@@ -57,23 +59,24 @@ function play() {
                 document.getElementById(j).style.backgroundColor = 'rgb(' + r1 + ',' + g1 + ',' + b1 + ')';
                 }
             }
+           
         }
-        
-        document.getElementById("play").addEventListener('click', event => {
+        if(count == 1){
+        // document.getElementById("play").addEventListener('click', event => {
             //handle click
             reset();
-            document.getElementById("play").addEventListener('click', event => {
-                
-                play();
-            })
-            document.getElementById("R").innerHTML = "";
-            document.getElementById("G").innerHTML = "";
-            document.getElementById("B").innerHTML = "";
+            // document.getElementById("play").addEventListener('click', event => {
+            //     play();
+            // })
+            // document.getElementById("R").innerHTML = "";
+            // document.getElementById("G").innerHTML = "";
+            // document.getElementById("B").innerHTML = "";
             // document.getElementById(id).innerHTML = "";
             document.body.style.backgroundColor='rgb(' + 255 + ',' + 255 + ',' + 255 + ')';
-
-          })
+            count = -1;
+        // })
     }
+}
 
 
 
