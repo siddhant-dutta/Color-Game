@@ -103,6 +103,7 @@ li.dropdown {
     height: 200px;
     width: 200px;
     margin: 20px;
+    border-radius:30px;
 }
 .altrow{
   display: flex;
