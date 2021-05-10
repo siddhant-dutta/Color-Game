@@ -105,6 +105,11 @@ li.dropdown {
     margin: 20px;
     border-radius:30px;
 }
+
+.item:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 .altrow{
   display: flex;
   justify-content: center;
