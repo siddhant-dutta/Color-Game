@@ -63,6 +63,7 @@ function play() {
             //handle click
             reset();
             document.getElementById("play").addEventListener('click', event => {
+                
                 play();
             })
             document.getElementById("R").innerHTML = "";
