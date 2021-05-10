@@ -12,6 +12,8 @@ function reset() {
     //     document.getElementById(index).style.backgroundColor = 'rgb(' + 255 + ',' + 255 + ',' + 255 + ')';
     // }
     document.getElementById("game").style.display = "none";
+    document.getElementById("initext").style.display = "flex";
+
 
 }
 function check(clicked) {
@@ -25,6 +27,7 @@ function check(clicked) {
 function play() {
     if (document.getElementById("play").innerText == "Play") {
         document.getElementById("game").style.display = "flex";
+        document.getElementById("initext").style.display = "none";
         document.getElementById("play").innerText = "Reset";
 
         var x = Math.floor((Math.random() * 256) );
